@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 Test</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+   /*  Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .jumbotron {
+      background-color: #f8f9fa; /* Light gray background */
+      color: #000;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .text-center {
+      text-align: center;
+    }
+    /* Navbar Customization */
+    .navbar-custom {
+      background-color: #240046;
+      transition: background-color 0.5s, box-shadow 0.5s;
+    }
+    .navbar-custom .navbar-brand {
+      color: #e0aaff;
+    }
+    .navbar-custom .nav-link {
+      color: #e0aaff;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #c77dff;
+    }
+    /* Footer Customization */
+    .footer-custom {
+      background-color: #240046;
+      color: #e0aaff;
+      padding: 20px 0;
+    }
+    .footer-custom a {
+      color: #e0aaff;
+      transition: color 0.3s;
+    }
+    .footer-custom a:hover {
+      color: #c77dff;
+      text-decoration: none;
+    }
+    /* Test Page Custom Styles */
+    .container {
+      max-width: 800px;
+    }
+    .upload-section {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .upload-section h2 {
+      margin-bottom: 20px;
+    }
+    .upload-section p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .upload-button {
+      background-color: #240046;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .upload-button:hover {
+      background-color: #3a0078;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand ml-0" href="index.html">CovidVision</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="test.html">Test</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Test Section -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <div class="upload-section">
+        <h2>Upload Your X-ray Image</h2>
+        <p>Upload an X-ray image to assess the likelihood of COVID-19 infection.</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <input type="file" class="form-control-file" id="xrayImage" name="xrayImage" accept="image/*">
+            <button type="submit" class="upload-button">Upload Image</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Contact Us</h4>
+          <p>Email: info@covidvision.com</p>
+          <p>Phone: +1234567890</p>
+          <p>Address: 123 Main Street, City, Country</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Office Locations</h4>
+          <p>Headquarters: 123 Main Street, City, Country</p>
+          <p>Branch Office 1: 456 Elm Street, City, Country</p>
+          <p>Branch Office 2: 789 Oak Street, City, Country</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

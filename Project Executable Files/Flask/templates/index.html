@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart COVID-19 Assistant</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .jumbotron {
+      background-image: url('backgroundimage.jpg');
+      background-size: cover;
+      background-position: center;
+      color: rgb(0, 0, 0);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .animated {
+      animation-duration: 1s;
+    }
+    .text-center {
+      text-align: center;
+    }
+    /* Navbar and Footer Customization */
+    .navbar-custom {
+      transition: background-color 0.5s, box-shadow 0.5s;
+    }
+    .navbar-custom.scrolled {
+      background-color: #240046 !important;
+    }
+    .navbar-custom.scrolled .navbar-brand {
+      color: #e0aaff !important;
+    }
+    .navbar-custom.scrolled .nav-link {
+      color: #c77dff !important;
+    }
+    .footer-custom {
+      background-color: #fff; /* Changed to white */
+      color: #000; /* Text color for footer */
+      padding: 20px 0; /* Adjusted padding for better spacing */
+    }
+    .footer-custom a {
+      color: #000; /* Link color in footer */
+      transition: color 0.3s;
+    }
+    .footer-custom a:hover {
+      color: #240046; /* Hover color for links */
+      text-decoration: none;
+    }
+    /* Home Section Customization */
+    #home .container {
+      text-align: left;
+    }
+    /* Precautions Section Customization */
+    #precautions .container {
+      text-align: left;
+    }
+    /* Custom Button Style */
+    .custom-button {
+      display: inline-block;
+      padding: 5px 12px;
+      background-color: #240046;
+      color: #fff;
+      border: none;
+      border-radius: 20px; /* Rounded border */
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .custom-button:hover {
+      background-color: #3a0078;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">CovidVision</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#precautions">Precautions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="test.html">Test</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Home Section -->
+  <section id="home" class="jumbotron text-center animate__animated animate__fadeIn blurred-image">
+    <div class="container">
+      <h1 class="display-4 animate__animated animate__fadeInDown">Welcome to CovidVision</h1>
+      <p class="lead animate__animated animate__fadeInUp">Upload a photo and let our deep learning model predict if you have COVID-19.</p>
+      <p class="lead animate__animated animate__fadeInUp">Our AI-powered assistant offers a quick and easy way to assess your health status.</p>
+      <p class="lead animate__animated animate__fadeInUp">Whether you are experiencing symptoms or just want to be sure, <br> our tool provides the reliability and accuracy you need.</p>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="animate__animated animate__fadeIn">About CovidVision</h2>
+      <p>CovidVision uses cutting-edge deep learning technology to analyze photos and predict the likelihood of COVID-19 infection. With a focus on accuracy and user privacy, we strive to offer a reliable tool for individuals seeking quick health assessments.</p>
+      <p>Our team is dedicated to providing innovative solutions in the field of health technology, empowering individuals with the tools they need to take control of their health during the pandemic.</p>
+      <p>At CovidVision, we believe in the power of AI to make a positive impact on public health. Our goal is to create products that not only meet current needs but also anticipate future challenges.</p>
+    </div>
+    <div class="container text-center">
+      <br><br>
+      <h2 class="animate__animated animate__fadeIn">Our Mission</h2>
+      <p class="animate__animated animate__fadeInUp">Our mission is to leverage advanced AI technology to provide accessible and accurate health assessments. We aim to empower individuals with the information they need to make informed health decisions and contribute to public health efforts.</p>
+      <br><br>
+      <h2 class="animate__animated animate__fadeIn">Our Vision</h2>
+      <p class="animate__animated animate__fadeInUp">Our vision is to be a leading force in health technology, driving innovation and shaping the future of health assessments. We envision a world where CovidVision products empower individuals and health professionals to create groundbreaking solutions that positively impact society.</p>
+      <br><br>
+      <h4>Explore our Deep Learning Model to check for COVID-19 <button class="custom-button" onclick="navigateToTest()">Check</button></h4>
+    </div>
+  </section>
+
+  <!-- Precautions Section -->
+  <section id="precautions" class="py-5">
+    <div class="container text-center">
+      <h2 class="animate__animated animate__fadeIn">Precautions</h2>
+      <p>Placeholder for precautions information goes here.</p>
+      <ul>
+        <li>Wear a mask in public places.</li>
+        <li>Maintain social distancing.</li>
+        <li>Wash hands frequently with soap and water.</li>
+        <li>Avoid touching your face.</li>
+        <li>Clean and disinfect frequently touched objects and surfaces.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer-custom text-light py-4" style="background-color: #240046;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4 style="color: #e0aaff;">Contact Us</h4>
+        <p style="color: #9d4edd;">Email: info@covidvision.com</p>
+        <p style="color: #9d4edd;">Phone: +1234567890</p>
+        <p style="color: #9d4edd;">Address: 123 Main Street, City, Country</p>
+      </div>
+      <div class="col-md-6">
+        <h4 style="color: #e0aaff;">Office Locations</h4>
+        <p style="color: #9d4edd;">Headquarters: 123 Main Street, City, Country</p>
+        <p style="color: #9d4edd;">Branch Office 1: 456 Elm Street, City, Country</p>
+        <p style="color: #9d4edd;">Branch Office 2: 789 Oak Street, City, Country</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function navigateToTest() {
+      window.location.href = 'test.html';
+    }
+
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar-custom');
+      var navbarBrand = document.querySelector('.navbar-custom .navbar-brand');
+      var navLinks = document.querySelectorAll('.navbar-custom .nav-link');
+      
+      if (window.scrollY > 150) {
+        navbar.classList.add('scrolled');
+        navbarBrand.style.color = '#e0aaff';
+        navLinks.forEach(link => {
+          link.style.color = '#c77dff';
+        });
+      } else {
+        navbar.classList.remove('scrolled');
+        navbarBrand.style.color = '#000';
+        navLinks.forEach(link => {
+          link.style.color = '#000';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
